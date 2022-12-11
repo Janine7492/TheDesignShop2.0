@@ -1,0 +1,40 @@
+.prodWrapper {}
+
+.prod_link {
+    text-decoration: none;
+    color: dimgrey;
+    height: 400px;
+    display: grid;
+    grid-template-rows: 4fr 2fr 1fr;
+    margin: 2rem auto;
+}
+
+.prod_img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+.prod_description {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    margin: 1.5rem auto;
+}
+
+.prod_title {
+    font-size: 1.5rem;
+
+}
+
+.prod_price {
+    font-size: 1.5rem;
+}
+
+.prod_brand {
+    font-size: 1rem;
+    margin: 0.5rem auto 2rem auto;
+    display: block;
+    justify-self: left;
+}

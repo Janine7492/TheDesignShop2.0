@@ -1,0 +1,77 @@
+/* ============================
+        Header
+=============================== */
+header {
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+
+
+
+.HeaderHomeLink {
+    text-decoration: none;
+    font-family: Karla-Bold;
+    font-size: 4rem;
+    max-width: 45%;
+    color: black;
+}
+
+.HeaderHomeLink:hover {
+    color: #848484
+}
+
+.regMenu {
+    display: flex;
+    flex-direction: row;
+}
+
+/* .regMenu ul {
+
+    position: absolute;
+    right: 5rem;
+    top: 10px;
+} */
+
+.regMenu ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.regMenu ul a,
+.regMenu ul a li {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.regMenu ul li a:hover {
+    color: #848484
+}
+
+.regMenu {
+    height: 50px;
+}
+
+@media only screen and (max-width: 750px) {
+    .navbar {
+        display: flex;
+    }
+
+    .regMenu {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:751px) {
+    .navbar {
+        display: none;
+    }
+
+    .regMenu {
+        display: flex;
+    }
+}

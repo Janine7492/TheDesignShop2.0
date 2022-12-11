@@ -1,0 +1,33 @@
+.productList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 85%;
+    margin: 2rem auto;
+}
+
+/* .regularWidth {
+    grid-column-end: span 2;
+} */
+
+.productList :nth-child(6n+5) {
+    grid-column-end: span 2;
+}
+
+.productList :nth-child(6n+6) {
+    grid-column-end: span 2;
+}
+
+@media only screen and (max-width:600px) {
+    .productList {
+        grid-template-columns: 1fr;
+    }
+
+    .productList :nth-child(6n+5) {
+        grid-column-end: span 1;
+    }
+
+    .productList :nth-child(6n+6) {
+        grid-column-end: span 1;
+    }
+}

@@ -1,38 +1,113 @@
-.App {
+@font-face {
+  font-family: Karla-Bold;
+  src: url("./assets/fonts/Karla-Bold.ttf");
+}
+
+@font-face {
+  font-family: Karla-Light;
+  src: url("./assets/fonts/Karla-Light.ttf");
+}
+
+@font-face {
+  font-family: Karla-Medium;
+  src: url("./assets/fonts/Karla-Medium.ttf");
+}
+
+@font-face {
+  font-family: Karla-Regular;
+  src: url("./assets/fonts/Karla-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.dot {
+  margin: 0 1rem;
+  font-size: 2rem;
+}
+
+.cursive {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+  font-family: Karla-Bold;
+}
+
+html {
+  font-size: 8px;
+  font-family: Karla-Regular;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.midGrayColor {
+  color: #848484;
+  font-size: 1.6rem;
+}
+
+.darkGrayColorHeadline a,
+.darkGrayColorHeadline h2,
+.darkGrayColorHeadline p {
+  color: #323A45;
+  font-size: 2rem;
+  font-family: Karla-Bold;
+  text-decoration: none;
+}
+
+button {
+  width: 7rem;
+  height: 7rem;
+  background-color: #848484;
+  border: 1px solid #323A45;
+  border-radius: 50%;
+  padding: 1.5rem;
+  position: fixed;
+  top: 90vh;
+  right: 2rem;
+}
+
+button img {
+  width: 100%;
+  transform: rotatez(180deg);
+}
+
+button:hover {
+  background-color: lightgrey;
+}
+
+.subPages {
+  width: 50%;
+  margin: 100px auto;
+  font-size: 2rem;
   text-align: center;
+  background-color: lightgrey;
+  padding: 5rem;
+  border-radius: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.subPages h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.subPages form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subPages input {
+  padding: 1rem;
+  width: 50%;
+  margin: 2rem auto 0 auto;
+  text-align: center;
 }
