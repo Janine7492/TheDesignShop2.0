@@ -1,7 +1,6 @@
 import "./ProductList.css";
 import Data from "../../Data.json";
 import Products from "../products/Products";
-import { useState } from "react";
 
 
 function ProductList() {
